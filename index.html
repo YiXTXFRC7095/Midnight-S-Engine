@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>David's Searching Engine</title>
+		<meta name="keywords" content="浏览器爬虫搜索关键字"> <!--此处为在搜索引擎抓取的关键字 -->
+        <meta name="description" content="搜索结果简介">  <!--你的引擎描述 -->
+        <link rel="shortcut icon" href="favicon.ico">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+	<body onselectstart="return false" oncontextmenu=self.event.returnValue=false>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+
+							<font size="7">logo文字</font>						</div> <!-- logo文字推荐控制在两个英文字母，一个中文字之内 -->
+						<div class="content">
+							<div class="inner">
+								<h1>大标题</h1>
+
+
+
+
+								<form action="https://www.baidu.com/s">
+        			<input id="input" name="wd" type="text">
+        			<input id="sub" type="submit" value="搜索按钮文字"> <!-- 按钮文字例子：百度一下 -->
+    					</form>
+						    <script>
+						        document.querySelector('button').onclick = function(){
+						            window.open('https://www.baidu.com/s?wd=' + document.querySelector('#input').value);
+						        }
+						    </script>
+
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="链接" target="_blank"><i></i>链接名</a></li>
+								<li><a href="链接" target="_blank"><i></i>链接名</a></li>
+								<li><a href="链接"target="_blank"><i></i>链接名</a></li>
+                <li><a href="链接" target="_blank"><i></i>链接名</a></li>
+								<li><a href="链接" target="_blank"><i></i>链接名</a></li>
+								<li><a href="链接"target="_blank"><i></i>链接名</a></li>
+								<!-- 画面自适应系统支持随意删减、增加链接 -->
+
+
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">©版权到期时间 <a href="自己搜索引擎的链接" target="_blank">名字</a> Copy Right</p>
+
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+
+	</body>
+</html>
